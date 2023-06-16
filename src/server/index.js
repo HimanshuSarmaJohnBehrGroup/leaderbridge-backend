@@ -8,6 +8,7 @@ const os = require("os");
 const initMiddleware = require("./middlewares");
 const initRouter = require("./router");
 const http = require("http");
+const cors = require('cors');
 const webSocket = require("./socket-io");
 const api4User = require("../api/user/index");
 const compression = require("compression");
@@ -65,6 +66,11 @@ const runServer = async () => {
   var api_cron1 = cron.schedule("0 19 * * *", () => {
     api4User.PricingUser.handler();
   });
+
+
+  app.use(cors({
+    origin: '*'
+  }));
 
   app.use(
     compression(
