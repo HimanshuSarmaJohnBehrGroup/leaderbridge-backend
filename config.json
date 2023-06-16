@@ -1,0 +1,33 @@
+{
+  "MONGODB": {
+    "GLOBAL": {
+      "DATABASE": {
+        "LEADER_BRIDGE": {
+          "COLLECTION": {
+            "LOG": "log",
+            "CONTACT": "contact",
+            "CMS": "cms",
+            "FILTER": "filter",
+            "FILTER_TYPE": "filterType",
+            "QUESTION": "question",
+            "CODE_REGISTRATION": "code_registration",
+            "CODE_VERIFICATION": "code_verification",
+            "USER": "user",
+            "ANSWER": "answer",
+            "CHAT": "chat",
+            "CHAT_ROOM": "chat_room",
+            "CONNECTION": "connection",
+            "LEGENDS": "legends",
+            "ANSWER_ROOM": "answer_room",
+            "NOTIFICATION": "notification",
+            "MATCHING": "matching",
+            "REQUEST_PROFILE_ACCESS": "requestProfile"
+          },
+          "NAME": "leaderBridge"
+        }
+      },
+      "URI": "mongodb://localhost:27017/leader_bridge",
+      "USE_TEST_PIN": "false"
+    }
+  }
+}
